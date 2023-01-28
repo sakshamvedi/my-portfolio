@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+body {
+  background-image: url("https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6151cdfe606aa08dbbc6965c_color-combinations_bloghero-p-2000.jpeg");
+  background-size: cover;
+}
+
+.cover {
+  background-color: rgba(255, 192, 203, 0.105);
+}
+
+.upper-bar {
+  height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.mid-bar .box1 {
+  font-family: "Roboto", sans-serif;
+  margin-left: 50px;
+  width: 50%;
+}
+.mid-bar .box1 h1 {
+  font-weight: 100;
+  font-size: 55px;
+  color: #0b0361;
+}
+.mid-bar .box1 h1 b {
+  font-weight: 500;
+}/*# sourceMappingURL=Body.css.map */
