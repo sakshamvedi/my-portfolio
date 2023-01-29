@@ -1,12 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 body {
-  background-image: url("https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6151cdfe606aa08dbbc6965c_color-combinations_bloghero-p-2000.jpeg");
+  background-color: black;
   background-size: cover;
-}
-
-.cover {
-  background-color: rgba(255, 192, 203, 0.105);
 }
 
 .upper-bar {
@@ -15,16 +12,115 @@ body {
   position: sticky;
 }
 
+.mid-bar {
+  display: flex;
+  align-items: center;
+}
 .mid-bar .box1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   margin-left: 50px;
   width: 50%;
-}
-.mid-bar .box1 h1 {
-  font-weight: 100;
-  font-size: 55px;
-  color: #0b0361;
+  color: #0A2647;
 }
 .mid-bar .box1 h1 b {
+  font-weight: 800;
+}
+.mid-bar .box1 h1 {
+  color: #0A2647;
+  font-weight: 100;
+  font-size: 70px;
+  font-weight: bold !important;
+  cursor: pointer;
+}
+.mid-bar .box1 h1 {
+  background: linear-gradient(to right, hsl(0deg, 0%, 30%) 0, hsl(0deg, 0%, 100%) 10%, hsl(0deg, 0%, 30%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: shine 3s infinite linear;
+          animation: shine 3s infinite linear;
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+.mid-bar .box1 p {
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: white;
+  opacity: 0.7;
+}
+.mid-bar .box1 p b {
+  color: goldenrod;
+  font-weight: 700;
+}
+.mid-bar .box1 p:hover {
+  opacity: 1;
+}
+.mid-bar .box2 .eye {
+  position: relative;
+  left: 10px;
+  height: 40px;
+  width: 30px;
+  border-radius: 50%;
+  top: 220px;
+  left: 230px;
+  background-color: #000074;
+  overflow: hidden;
+}
+.mid-bar .box2 .eye .pupil {
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.1s;
+}
+.mid-bar .box2 .eye2 {
+  position: relative;
+  left: 10px;
+  height: 40px;
+  width: 30px;
+  border-radius: 50%;
+  top: 190px;
+  left: 160px;
+  background-color: #000074;
+}
+.mid-bar .box2 .eye2 .pupil2 {
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.1s ease-in-out;
+}
+
+.about-bar h2 {
+  color: white;
+  margin-left: 50px;
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  opacity: 1;
+}
+.about-bar h2 b {
+  color: orange;
 }/*# sourceMappingURL=Body.css.map */

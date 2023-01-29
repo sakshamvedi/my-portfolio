@@ -1,15 +1,14 @@
 body{
 
-    background-image: url("https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6151cdfe606aa08dbbc6965c_color-combinations_bloghero-p-2000.jpeg");
+   background-color: black;
     background-size: cover;
      
 }   
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-$primary-color   : #0b0361;
-.cover{
-    background-color: rgba(255, 192, 203, 0.105);
-}
+$primary-color   : #0A2647;
+$nunito  : 'Nunito', sans-serif;
 
 .upper-bar{
     height: 50px;
@@ -17,19 +16,123 @@ $primary-color   : #0b0361;
 }
 
 .mid-bar{
+    display: flex;
+  
+    align-items: center;
     .box1{
-       font-family: 'Roboto', sans-serif;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         margin-left: 50px;
         width: 50%;
-        
+        color: $primary-color;
         h1{
-            font-weight: 100;
-            font-size: 55px;
-            color: #0b0361;
             b{
-                font-weight: 500;
+                font-weight: 800;
+                
             }
         }
-    }
+        h1 {
+            color: $primary-color;
+            font-weight: 100;
+            font-size: 70px;
+            font-weight: bold!important;
+            cursor: pointer;
+           
+          }
+          
+          h1 {
+          
+            background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            animation: shine 3s infinite linear;
+          }
+          
+          @keyframes shine {
+            0% {
+              background-position: 0;
+            }
+            60% {
+              background-position: 600px;
+            }
+            100% {
+              background-position: 600px;
+            }
+          }
 
+
+        p{
+            font-family: 'Nunito', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+           letter-spacing: 1.5px;
+           color: white;
+           opacity: 0.7;
+           b{
+            color: goldenrod;
+            font-weight: 700;
+           }
+           &:hover{
+            opacity: 1.0;
+           }
+           
+        }
+      
+    }
+.box2{
+  
+   
+  .eye{
+    position: relative;
+     left: 10px;
+     height: 40px;
+     width: 30px;
+     border-radius: 50%;
+     top: 220px;
+     left: 230px;
+     background-color: #000074;
+     overflow: hidden;
+    .pupil{
+     background-color: white;
+     height: 15px;
+     width: 15px;
+     border-radius: 50%;
+     position: absolute;
+      
+  transition: all 0.1s;
+    }
+}
+
+.eye2{
+    position: relative;
+     left: 10px;
+     height: 40px;
+     width: 30px;
+     border-radius: 50%;
+     top: 190px;
+     left: 160px;
+     background-color: #000074;
+    .pupil2{
+     background-color: white;
+     height: 15px;
+     width: 15px;
+     border-radius: 50%;
+     position: absolute;
+      
+  transition: all 0.1s ease-in-out;
+    }
+}
+}
+}
+
+.about-bar{
+    h2{
+        color: white;
+        margin-left: 50px;
+        font-family: $nunito;
+        font-size: 50px;
+        opacity: 1.0;
+        b{
+            color: orange;
+        }
+    }
 }
