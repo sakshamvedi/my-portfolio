@@ -1,9 +1,10 @@
 body{
 
-   background-color: black;
+   background-color: white;
     background-size: cover;
-     
+  
 }   
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Nunito:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
@@ -12,7 +13,45 @@ $nunito  : 'Nunito', sans-serif;
 
 .upper-bar{
     height: 50px;
-  position: sticky;
+    display: flex;
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 20px;
+    opacity: 0.6;
+    justify-content: center;
+    align-items: center;
+   
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+    p{
+        margin-right: 100px;
+        letter-spacing: 1px;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover{
+            letter-spacing: 3px;
+        }
+    }
+    h1{
+        font-family: 'Damion', cursive;
+        color: red;
+        opacity: 1.0;
+        margin-left: 8%;
+       
+    }
+    .bar{
+        margin-left: 15%;
+        display: flex;
+        
+    }
+   
+    z-index: 9999;
+    position: sticky;
+ 
 }
 
 .mid-bar{
@@ -60,22 +99,6 @@ $nunito  : 'Nunito', sans-serif;
           }
 
 
-        p{
-            font-family: 'Nunito', sans-serif;
-            font-weight: 500;
-            font-size: 18px;
-           letter-spacing: 1.5px;
-           color: white;
-           opacity: 0.7;
-           b{
-            color: goldenrod;
-            font-weight: 700;
-           }
-           &:hover{
-            opacity: 1.0;
-           }
-           
-        }
       
     }
 .box2{
@@ -125,14 +148,330 @@ $nunito  : 'Nunito', sans-serif;
 }
 
 .about-bar{
+margin-left: 50px;
+    p{
+        margin-top: -30px;
+      opacity: 0.6;
+      font-weight: $nunito;
+      letter-spacing: 1.5px;
+      font-size: 20px;
+    }
+    .line{
+        background-color: black;
+        opacity: 0.7;
+        transform: rotate(180deg);
+        height: 200px;
+        width: 1px;
+        margin-top: -10px;
+        margin-left: 20px;
+        opacity: 0.3;
+    }
+  
+
+
     h2{
-        color: white;
-        margin-left: 50px;
-        font-family: $nunito;
-        font-size: 50px;
-        opacity: 1.0;
-        b{
-            color: orange;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     margin-left: 50px;
+     font-size: 45px; 
+     color: #4d4d4d;  
+    }
+    .main-box
+    {
+        display:flex;
+    .box1{
+        width: 50%;
+        order: 1;
+        p{
+            letter-spacing: 1.5px;
+            word-spacing: 2.5px;
+            font-size: 27px;
+            font-family: $nunito;
+            color: black;
+        
+        }
+
+        ul{
+            margin-top: 80px;
+            li{
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
         }
     }
+    .box2{
+        width: 45%;
+        order: -1;
+    }
+}
+}
+
+.languages{
+    margin-left: 50px;
+    p{
+        margin-top: -30px;
+      opacity: 0.6;
+      font-weight: $nunito;
+      letter-spacing: 1.5px;
+      font-size: 20px;
+    }
+    .line{
+        background-color: black;
+        opacity: 0.7;
+        transform: rotate(180deg);
+        height: 200px;
+        width: 1px;
+        margin-top: -10px;
+        margin-left: 20px;
+        opacity: 0.3;
+    }
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left: 50px;
+        font-size: 45px; 
+        color: #4d4d4d;  
+       }
+
+     .frontend{
+       
+        font-family: $nunito;
+        font-size: 22px;
+        margin-left: 60px;
+        letter-spacing: 1.5px;
+        word-spacing: 2px;
+    border-bottom: 2px solid brown;
+    padding-bottom: 20px;
+    width: 80%;
+   
+    color: #4d4d4d;
+    b{
+        font-weight: 800;
+    }
+
+  
+     }
+     .solar{
+        display: flex;
+        justify-content: center;
+        img{
+            height: 300px;
+            margin-bottom: 40px;
+        }
+     }
+
+
+
+     
+
+  
+}
+
+
+.game{
+    margin-left: 50px;
+    
+    p{
+        margin-top:70px;
+      opacity: 0.6;
+      font-weight: $nunito;
+      letter-spacing: 1.5px;
+      font-size: 20px;
+    }
+    .line{
+        background-color: black;
+        opacity: 0.7;
+        transform: rotate(180deg);
+        height: 200px;
+        width: 1px;
+        margin-top: -10px;
+        margin-left: 20px;
+        opacity: 0.3;
+    }
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left: 30px;
+        font-size: 35px; 
+        color: #4d4d4d;  
+       }
+       .containers{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .box2{
+            width: 50%;
+          
+            margin-left: 20px;
+         img{
+            height: 400px;
+            margin-left: 25%;
+           margin-top: -150px;
+         }
+         p{
+  letter-spacing: 0px;
+  font-size: 24px;
+  width: 50%;
+  color: black;
+  font-family: $nunito;
+  font-weight: 600;
+  transform: rotate(-45deg);
+         }
+        }
+       }
+}
+
+
+.experience{
+    margin-left: 50px;
+
+    
+    p{
+        margin-top:70px;
+      opacity: 0.6;
+      font-weight: $nunito;
+      letter-spacing: 1.5px;
+      font-size: 20px;
+    }
+    .line{
+        background-color: black;
+        opacity: 0.7;
+        transform: rotate(180deg);
+        height: 200px;
+        width: 1px;
+        margin-top: -10px;
+        margin-left: 20px;
+        opacity: 0.3;
+    }
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left: 30px;
+        font-size: 35px; 
+        color: #4d4d4d;  
+       }
+       .box{
+        display: flex;
+        flex-wrap: wrap;
+
+       .card1{
+        width: 25%;
+        background-color: #f4e6fe;
+        display: flex;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+        
+        flex-direction: column;
+        margin-right: 5%;
+        padding: 20px;
+        transform: rotate(0deg);
+         &:hover{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+         }
+         h3{
+            font-family: $nunito;
+
+            font-size: 20px;
+            opacity: 0.7;
+            word-spacing: 1px;
+            b{
+                font-weight: 800;
+                color: brown;
+            }
+         }
+         h2{
+            font-size: 12px;
+            margin-top: -10px;
+            margin-left: 0px;
+         }
+         ul{
+            li{
+                font-family: $nunito;
+                font-size: 13px;
+                margin-bottom: 10px;
+                font-weight: 600;
+                opacity: 0.8;
+                word-spacing: 2px;
+            }
+         }
+
+
+       }
+    }
+
+
+
+}
+
+.search{
+    margin-left: 50px;
+    position: relative;
+    p{
+        margin-top:70px;
+      opacity: 0.6;
+      font-weight: $nunito;
+      letter-spacing: 1.5px;
+      font-size: 20px;
+    }
+    .line{
+        background-color: black;
+        opacity: 0.7;
+        transform: rotate(180deg);
+        height: 200px;
+        width: 1px;
+        margin-top: -10px;
+        margin-left: 20px;
+        opacity: 0.3;
+    }
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left: 30px;
+        font-size: 35px; 
+        color: #4d4d4d;  
+       }
+       input{
+        margin-top: 20px;
+        width: 80%;
+        margin-left: 50px;
+        height: 50px;
+        border: solid 2px gray;
+        border-radius: 25px;
+        padding-left: 80px;
+        font-family: $nunito;
+          font-size: 20px;       
+    }
+    img{
+        height: 40px;
+        position: absolute;
+        left: 70px;
+        bottom: 10px;
+        z-index: 999;
+       
+        
+    }
+    a{
+        position: absolute;
+        right: 120px;
+        bottom: 8px;
+        background-color: rgb(219, 250, 219);
+        color: black;
+        font-family: $nunito;
+        padding: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 10px;
+        &:hover{
+            background-color: rgb(144, 250, 144);
+        }
+    }
+}
+
+.footer{
+    margin-top: 200px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: $nunito;
+    color: black;
+    font-weight: 800;
 }

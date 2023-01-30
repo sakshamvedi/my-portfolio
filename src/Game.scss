@@ -1,0 +1,61 @@
+.container{
+    background-color: #BCCEF8;
+    height: 400px;
+    width: 400px;
+    border-radius: 5%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(3 , 1fr);
+   gap: 1em;
+   padding: 10px;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 100px;
+        transform: scale(0);
+        transition: 0.5s;
+    }
+    &.active{
+   
+        img{
+           
+            transform: scale(1);
+           
+        }
+    
+    }
+    &.right{
+        background-color: #CEEDC7;
+        img{
+            transform: scale(1);
+          
+        }
+    }
+    &.wrong{
+        
+        img{
+            
+            animation: 0.75s hideimage linear;
+        }
+        
+       
+    }
+  
+}
+
+@keyframes hideimage {
+    0% , 70%{
+        transform: scale(1);
+         
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+

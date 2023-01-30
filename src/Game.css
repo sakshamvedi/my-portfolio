@@ -1,0 +1,55 @@
+.container {
+  background-color: #BCCEF8;
+  height: 400px;
+  width: 400px;
+  border-radius: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1em;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  height: 100px;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.card.active img {
+  transform: scale(1);
+}
+.card.right {
+  background-color: #CEEDC7;
+}
+.card.right img {
+  transform: scale(1);
+}
+.card.wrong img {
+  -webkit-animation: 0.75s hideimage linear;
+          animation: 0.75s hideimage linear;
+}
+
+@-webkit-keyframes hideimage {
+  0%, 70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes hideimage {
+  0%, 70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}/*# sourceMappingURL=Game.css.map */
